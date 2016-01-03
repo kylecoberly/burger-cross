@@ -1,0 +1,33 @@
+{
+    "name": "burger-cross",
+    "version": "0.1.0",
+    "authors": [
+        "Kyle Coberly <kyle.coberly@gmail.com>"
+    ],
+    "description": "",
+    "keywords": [
+        "web-component",
+        "web-components",
+        "hamburger",
+        "burger",
+        "cross",
+        "remove",
+        "animated",
+        "menu",
+        "icon"
+    ],
+    "main": "burger-cross.html",
+    "license": "http://polymer.github.io/LICENSE.txt",
+    "homepage": "https://github.com/kylecoberly/burger-cross/",
+    "ignore": [
+        "/.*",
+        "/test/",
+        "/demo/"
+    ],
+    "dependencies": {
+        "polymer": "Polymer/polymer#^1.0.0"
+    },
+    "devDependencies": {
+        "web-component-tester": "*"
+    }
+}

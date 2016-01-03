@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+        <title>seed-element Demo</title>
+        <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
+        <link rel="import" href="../burger-cross.html">
+    </head>
+    <body>
+        <main>
+            <h1>Click it!</h1>
+            <burger-cross
+               container-dimension="200px"
+               ></burger-cross>
+            <h2></h2>
+            <dl>
+                <dt>container-dimension</dt>
+                <dd>200px</dd>
+                <dt>burger-color</dt>
+                <dd>#333</dd>
+                <dt>transition-speed</dt>
+                <dd>0.3s</dd>
+                <dt>cross-color</dt>
+                <dd>hsl(0, 50%, 50%)</dd>
+                <dt>container-color</dt>
+                <dd>#fff</dd>
+            </dl>
+            <ul id="events"></ul>
+        </main>
+        <script>
+            var burgerCross = document.getElementsByTagName("burger-cross")[0];
+            burgerCross.addEventListener("burgerCross", function(event){
+                var eventList = document.getElementById("events");
+                eventList.appendChild(new eventListItem(event));
+            });
+            function eventListItem(event){
+                var listElement = document.createElement("li");
+                var listText = document.createTextNode("event.detail.isOpen = " + event.detail.isOpen);
+                listElement.appendChild(listText);
+
+                return listElement;
+            }
+        </script>
+    </body>
+</html>
