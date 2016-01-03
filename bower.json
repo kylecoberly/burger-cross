@@ -4,7 +4,7 @@
     "authors": [
         "Kyle Coberly <kyle.coberly@gmail.com>"
     ],
-    "description": "",
+    "description": "A configurable element that animates between a hamburger menu and a closing icon on click.",
     "keywords": [
         "web-component",
         "web-components",

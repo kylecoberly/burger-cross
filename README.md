@@ -1,6 +1,6 @@
 # `burger-cross`
 
-An configurable element that animates between a hamburger menu and a closing icon on click.
+A configurable element that animates between a hamburger menu and a closing icon on click.
 
 ## Dependencies
 
